@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= htmlWebpackPlugin.options.cdnConfig.favicon %>">
+  <title></title>
+  <% htmlWebpackPlugin.options.cdnConfig.css.forEach(function(item){%>
+  <link href="<%= item %>" rel="stylesheet">
+  <% }) %>
+  <% htmlWebpackPlugin.options.cdnConfig.js.forEach(function(item){%>
+  <script type="application/javascript" src="<%= item %>"></script>
+  <% }) %>
+</head>
+<body>
+<div id="hepiCom"></div>
+</body>
+</html>

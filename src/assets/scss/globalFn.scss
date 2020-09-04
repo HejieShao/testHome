@@ -1,0 +1,9 @@
+/**
+*@Time : 2020/9/2 下午3:01
+*@Author : Hejie Shao
+*/
+$imgPath: 'https://img.hapicdn.com/spe/hapi';
+
+@function cs($UIsize){
+  @return $UIsize / 100 * 1rem;
+}
